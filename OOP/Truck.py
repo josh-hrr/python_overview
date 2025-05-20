@@ -12,10 +12,3 @@ class Truck(Vehicule):
             return f"El motor del Truck {self.brand} se ha detenido"
         else:
             return f"El Truck {self.brand} no esta disponible"
-        
-    def inquire_vehicule(self, vehicule: Vehicule):
-        if vehicule.check_available():
-            availability = "Disponible"
-        else:
-            availability = "No Disponible"
-        print(f"El {vehicule.brand} esta {availability} y cuesta {vehicule.get_price()}")
